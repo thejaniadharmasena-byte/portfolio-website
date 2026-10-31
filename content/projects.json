@@ -1,20 +1,13 @@
 {
   "ui_projects": [
     {
-      "title": "Canterbury Hotel & Golf Resort",
-      "tags": [
-        "Hospitality",
-        "Hotel",
-        "Golf Course"
-      ],
-      "overview": "Canterbury’s massive competitive edge as a new resort was bringing luxury golf close to Colombo, saving players long travel times. The goal was to build an elite web presence that highlighted this proximity and exclusivity.",
-      "role": "",
-      "objective": "",
       "approach": "I gave immense breathing room to the layout, using expansive whitespace to highlight the lush greenery of the course and keep the booking path effortless.",
+      "role": "",
       "decisions": [
         "Instead of a generic resort template, I wove subtle, sport-aligned details into custom iconography and used real golf terms in the copy to speak directly to an affluent audience."
       ],
-      "cover": "images/ui/01-canterbury/desktop-1.webp",
+      "cover": "/images/uploads/frame-697.jpg",
+      "title": "Canterbury Hotel & Golf Resort",
       "images": [
         {
           "image": "images/ui/01-canterbury/desktop-1.webp",
@@ -24,22 +17,23 @@
           "image": "images/ui/01-canterbury/mobile-1.webp",
           "kind": "mobile"
         }
-      ]
-    },
-    {
-      "title": "Amaloh Boutique Hotel",
+      ],
       "tags": [
         "Hospitality",
-        "Hotel"
+        "Hotel",
+        "Golf Course"
       ],
-      "overview": "A serene beachfront boutique hotel seeking a calm, elegant digital presence that reflects its exclusivity and caters to international guests looking for privacy, comfort, and effortless coastal exploration.",
-      "role": "",
       "objective": "",
+      "overview": "Canterbury’s massive competitive edge as a new resort was bringing luxury golf close to Colombo, saving players long travel times. The goal was to build an elite web presence that highlighted this proximity and exclusivity."
+    },
+    {
       "approach": "I designed a quiet, highly spacious layout with a minimal booking path, echoing the peaceful atmosphere of the physical property.",
+      "role": "",
       "decisions": [
         "Drawing inspiration from their logo and old Dutch architecture, I wove subtle Dutch patterns, soft sea-wave shapes, and purple lotus motifs into the UI, layered with delicate purple watercolor textures."
       ],
       "cover": "images/ui/02-amaloh/desktop-1.webp",
+      "title": "Amaloh Boutique Hotel",
       "images": [
         {
           "image": "images/ui/02-amaloh/desktop-1.webp",
@@ -49,22 +43,22 @@
           "image": "images/ui/02-amaloh/mobile-1.webp",
           "kind": "mobile"
         }
-      ]
-    },
-    {
-      "title": "Elevate Ella Hotel",
+      ],
       "tags": [
         "Hospitality",
         "Hotel"
       ],
-      "overview": "Designed by a renowned Sri Lankan architect, this unique hotel features massive black stone walls integrated directly into misty mountain landscapes. The digital presence needed to mirror this raw, earthy, yet luxurious architecture.",
-      "role": "",
       "objective": "",
+      "overview": "A serene beachfront boutique hotel seeking a calm, elegant digital presence that reflects its exclusivity and caters to international guests looking for privacy, comfort, and effortless coastal exploration."
+    },
+    {
       "approach": "Moving away from standard bright hotel layouts, I built a spacious, modern interface using a dark and organic visual system that matches the physical feel of the property.",
+      "role": "",
       "decisions": [
         "I relied on a deep green and charcoal palette, layering in subtle stone/cement textures and tree-branch shadow play to bring the misty atmosphere of Ella onto the screen."
       ],
       "cover": "images/ui/03-elevate-ella/desktop-1.webp",
+      "title": "Elevate Ella Hotel",
       "images": [
         {
           "image": "images/ui/03-elevate-ella/desktop-1.webp",
@@ -74,22 +68,22 @@
           "image": "images/ui/03-elevate-ella/inner-1.webp",
           "kind": "inner"
         }
-      ]
-    },
-    {
-      "title": "Dickwella Resort & Spa and Ayugiri Ayurveda Wellness Resort",
+      ],
       "tags": [
         "Hospitality",
-        "Group of Hotels"
+        "Hotel"
       ],
-      "overview": "Instead of a copy-pasted template for the entire hotel group, I kept a consistent layout structure but created custom visual “skins” for each location: sea-green and sand-beige for Dickwella, dark forest greens and gold-ish yellows for Ayugiri, and deep scarlets with earthy browns for Sigiriya.",
-      "role": "",
       "objective": "",
+      "overview": "Designed by a renowned Sri Lankan architect, this unique hotel features massive black stone walls integrated directly into misty mountain landscapes. The digital presence needed to mirror this raw, earthy, yet luxurious architecture."
+    },
+    {
       "approach": "Every skin shares the same structure, so each property gets its own soul without a new build.",
+      "role": "",
       "decisions": [
         "I wove quick cultural insights, like Ayurvedic wellness or local history, directly into the booking path to give international travelers a clear, contextual reason to book."
       ],
       "cover": "images/ui/04-dickwella-ayugiri/desktop-1.webp",
+      "title": "Dickwella Resort & Spa and Ayugiri Ayurveda Wellness Resort",
       "images": [
         {
           "image": "images/ui/04-dickwella-ayugiri/desktop-1.webp",
@@ -99,23 +93,22 @@
           "image": "images/ui/04-dickwella-ayugiri/desktop-2.webp",
           "kind": "desktop"
         }
-      ]
-    },
-    {
-      "title": "Jetwing Eco Holidays",
+      ],
       "tags": [
         "Hospitality",
-        "Travel Planning",
-        "Eco Tourism"
+        "Group of Hotels"
       ],
-      "overview": "An eco-tourism division of Jetwing Hotels crafting immersive wildlife, wellness, and filming experiences. I collaborated closely with their team to build a user-friendly hub for conscious travelers and global film crews.",
-      "role": "",
       "objective": "",
+      "overview": "Instead of a copy-pasted template for the entire hotel group, I kept a consistent layout structure but created custom visual “skins” for each location: sea-green and sand-beige for Dickwella, dark forest greens and gold-ish yellows for Ayugiri, and deep scarlets with earthy browns for Sigiriya."
+    },
+    {
       "approach": "I co-designed the entire site structure, mapping intuitive navigation paths for browsing tour packages, building custom wildlife journeys, and digesting a large database of species and national parks.",
+      "role": "",
       "decisions": [
         "A minimal, nature-focused layout, plus custom, detailed maps I personally illustrated for every major national park in Sri Lanka."
       ],
       "cover": "images/ui/05-jetwing-eco/desktop-1.webp",
+      "title": "Jetwing Eco Holidays",
       "images": [
         {
           "image": "images/ui/05-jetwing-eco/desktop-1.webp",
@@ -125,22 +118,23 @@
           "image": "images/ui/05-jetwing-eco/inner-1.webp",
           "kind": "inner"
         }
-      ]
-    },
-    {
-      "title": "Waters Edge",
+      ],
       "tags": [
         "Hospitality",
-        "Hotel"
+        "Travel Planning",
+        "Eco Tourism"
       ],
-      "overview": "Located right next to Colombo yet surrounded by lush greenery and a lake, Waters Edge needed a digital presence that balanced its reputation as an elite wedding destination with its high-end dining.",
-      "role": "",
       "objective": "",
+      "overview": "An eco-tourism division of Jetwing Hotels crafting immersive wildlife, wellness, and filming experiences. I collaborated closely with their team to build a user-friendly hub for conscious travelers and global film crews."
+    },
+    {
       "approach": "A high-conversion pathway for wedding couples and event planners, paired with dedicated, theme-driven menu templates for their Sri Lankan and Japanese restaurants.",
+      "role": "",
       "decisions": [
         "A spacious interface that showcases the resort’s signature lake and greenery, with restaurant sub-pages themed to the culinary vibe of each cuisine."
       ],
       "cover": "images/ui/06-waters-edge/desktop-1.webp",
+      "title": "Waters Edge",
       "images": [
         {
           "image": "images/ui/06-waters-edge/desktop-1.webp",
@@ -150,22 +144,22 @@
           "image": "images/ui/06-waters-edge/inner-1.webp",
           "kind": "inner"
         }
-      ]
-    },
-    {
-      "title": "Travel Design",
+      ],
       "tags": [
         "Hospitality",
-        "Travel Planning"
+        "Hotel"
       ],
-      "overview": "Operating under Connaissance De Ceylan, this brand designs bespoke Sri Lankan holidays for high-end independent travelers. The goal was a clean, minimalist platform reflecting over 34 years of luxury travel expertise.",
-      "role": "",
       "objective": "",
+      "overview": "Located right next to Colombo yet surrounded by lush greenery and a lake, Waters Edge needed a digital presence that balanced its reputation as an elite wedding destination with its high-end dining."
+    },
+    {
       "approach": "A highly elegant, spacious layout that stays true to their established color palette, focused on comfort and high-quality experiences.",
+      "role": "",
       "decisions": [
         "A custom illustrated map of Sri Lanka and subtle, curved UI motifs inspired by the serifs of their logo font."
       ],
       "cover": "images/ui/07-travel-design/desktop-1.webp",
+      "title": "Travel Design",
       "images": [
         {
           "image": "images/ui/07-travel-design/desktop-1.webp",
@@ -175,22 +169,22 @@
           "image": "images/ui/07-travel-design/inner-1.webp",
           "kind": "inner"
         }
-      ]
-    },
-    {
-      "title": "Karusan Travels",
+      ],
       "tags": [
         "Hospitality",
         "Travel Planning"
       ],
-      "overview": "Operating under Connaissance De Ceylan, this brand designs bespoke Sri Lankan holidays for high-end independent travelers, with a clean, minimalist platform reflecting over 34 years of expertise.",
-      "role": "",
       "objective": "",
+      "overview": "Operating under Connaissance De Ceylan, this brand designs bespoke Sri Lankan holidays for high-end independent travelers. The goal was a clean, minimalist platform reflecting over 34 years of luxury travel expertise."
+    },
+    {
       "approach": "A highly elegant, spacious layout that stays true to their established color palette.",
+      "role": "",
       "decisions": [
         "A custom illustrated map of Sri Lanka and curved UI motifs inspired by their logo font."
       ],
       "cover": "images/ui/08-karusan/desktop-1.webp",
+      "title": "Karusan Travels",
       "images": [
         {
           "image": "images/ui/08-karusan/desktop-1.webp",
@@ -200,23 +194,22 @@
           "image": "images/ui/08-karusan/mobile-1.webp",
           "kind": "mobile"
         }
-      ]
+      ],
+      "tags": [
+        "Hospitality",
+        "Travel Planning"
+      ],
+      "objective": "",
+      "overview": "Operating under Connaissance De Ceylan, this brand designs bespoke Sri Lankan holidays for high-end independent travelers, with a clean, minimalist platform reflecting over 34 years of expertise."
     },
     {
-      "title": "Koxa by Dr. Cherry",
-      "tags": [
-        "E-commerce",
-        "Cosmetics",
-        "Health"
-      ],
-      "overview": "As a luxury, science-driven cosmetics brand under the 360 Group, KOXA needed an upscale e-commerce platform that justified its premium price point to affluent women.",
-      "role": "",
-      "objective": "",
       "approach": "A light, spacious e-commerce interface that avoids crowded retail grids, making online shopping feel like entering a high-end spa.",
+      "role": "",
       "decisions": [
         "Clean, elegant typography and a soft, minimalist palette that mirrors the light, fresh tones of the product packaging."
       ],
       "cover": "images/ui/09-koxa/desktop-1.webp",
+      "title": "Koxa by Dr. Cherry",
       "images": [
         {
           "image": "images/ui/09-koxa/desktop-1.webp",
@@ -226,22 +219,23 @@
           "image": "images/ui/09-koxa/mobile-1.webp",
           "kind": "mobile"
         }
-      ]
-    },
-    {
-      "title": "Hedley’s Tea",
+      ],
       "tags": [
         "E-commerce",
-        "Tea"
+        "Cosmetics",
+        "Health"
       ],
-      "overview": "A global Ceylon tea brand needing a modern e-commerce platform to streamline international purchasing, while honoring their signature heritage branding.",
-      "role": "",
       "objective": "",
+      "overview": "As a luxury, science-driven cosmetics brand under the 360 Group, KOXA needed an upscale e-commerce platform that justified its premium price point to affluent women."
+    },
+    {
       "approach": "A global ordering system that dynamically manages product lines and package sizes by region, turning a messy logistical backend into a smooth checkout.",
+      "role": "",
       "decisions": [
         "Warm, aged-beige paper tones and subtle, custom tea-stain textures give the store an authentic, storied feel."
       ],
       "cover": "images/ui/10-headleys-tea/desktop-1.webp",
+      "title": "Hedley’s Tea",
       "images": [
         {
           "image": "images/ui/10-headleys-tea/desktop-1.webp",
@@ -255,22 +249,22 @@
           "image": "images/ui/10-headleys-tea/inner-2.webp",
           "kind": "inner"
         }
-      ]
-    },
-    {
-      "title": "T-Sips",
+      ],
       "tags": [
         "E-commerce",
         "Tea"
       ],
-      "overview": "Backed by four decades of heritage under Expoteas Ceylon, T-Sips has a youthful, vibrant personality. They needed a platform balancing corporate trust with a lively storefront.",
-      "role": "",
       "objective": "",
+      "overview": "A global Ceylon tea brand needing a modern e-commerce platform to streamline international purchasing, while honoring their signature heritage branding."
+    },
+    {
       "approach": "A clean, modern e-commerce structure showcasing their huge variety of blends, so discovery and checkout feel quick.",
+      "role": "",
       "decisions": [
         "A bold look built on their bright orange, plus clean 3D-rendered style product visuals I crafted manually, long before AI tools made it easy."
       ],
       "cover": "images/ui/11-t-sips/desktop-1.webp",
+      "title": "T-Sips",
       "images": [
         {
           "image": "images/ui/11-t-sips/desktop-1.webp",
@@ -280,22 +274,22 @@
           "image": "images/ui/11-t-sips/mobile-1.webp",
           "kind": "mobile"
         }
-      ]
-    },
-    {
-      "title": "Viz Kids",
+      ],
       "tags": [
         "E-commerce",
-        "Kids Clothing"
+        "Tea"
       ],
-      "overview": "Viz Kids imports high-end international children’s clothing to Sri Lanka. The challenge was an e-commerce site that felt premium and trustworthy to parents while keeping a fun, youthful energy.",
-      "role": "",
       "objective": "",
+      "overview": "Backed by four decades of heritage under Expoteas Ceylon, T-Sips has a youthful, vibrant personality. They needed a platform balancing corporate trust with a lively storefront."
+    },
+    {
       "approach": "A clean, minimalist layout with a vibrant but controlled palette that highlights their core yellow and purple.",
+      "role": "",
       "decisions": [
         "Airy, high-end product photography on soft pastel backgrounds, proving a kids’ brand can be both playful and sophisticated."
       ],
       "cover": "images/ui/12-viz-kids/desktop-1.webp",
+      "title": "Viz Kids",
       "images": [
         {
           "image": "images/ui/12-viz-kids/desktop-1.webp",
@@ -305,22 +299,22 @@
           "image": "images/ui/12-viz-kids/inner-1.webp",
           "kind": "inner"
         }
-      ]
-    },
-    {
-      "title": "Vijitha Yapa Bookshop",
+      ],
       "tags": [
         "E-commerce",
-        "Bookshop"
+        "Kids Clothing"
       ],
-      "overview": "As Sri Lanka’s largest book retailer, Vijitha Yapa needed to replace an outdated website with a modern e-commerce platform that could handle a massive, diverse catalog.",
-      "role": "",
       "objective": "",
+      "overview": "Viz Kids imports high-end international children’s clothing to Sri Lanka. The challenge was an e-commerce site that felt premium and trustworthy to parents while keeping a fun, youthful energy."
+    },
+    {
       "approach": "A highly structured layout that made searching and filtering effortless, turning a cluttered database into a clean digital bookstore.",
+      "role": "",
       "decisions": [
         "A custom 3D look for book previews, paired with tactile hover animations, recreating the nostalgia of browsing a real bookshop."
       ],
       "cover": "images/ui/13-vijitha-yapa/desktop-1.webp",
+      "title": "Vijitha Yapa Bookshop",
       "images": [
         {
           "image": "images/ui/13-vijitha-yapa/desktop-1.webp",
@@ -330,23 +324,22 @@
           "image": "images/ui/13-vijitha-yapa/mobile-1.webp",
           "kind": "mobile"
         }
-      ]
+      ],
+      "tags": [
+        "E-commerce",
+        "Bookshop"
+      ],
+      "objective": "",
+      "overview": "As Sri Lanka’s largest book retailer, Vijitha Yapa needed to replace an outdated website with a modern e-commerce platform that could handle a massive, diverse catalog."
     },
     {
-      "title": "TYAX",
-      "tags": [
-        "Corporate",
-        "IT",
-        "Technology"
-      ],
-      "overview": "As a leading enterprise IT distributor across Sri Lanka, Singapore, and the Maldives, TYAX needed a modern B2B platform that signals global scale, technical innovation, and reliability.",
-      "role": "",
-      "objective": "",
       "approach": "A clean, highly organized interface for business clients that makes complex enterprise catalogs and managed services easy to navigate.",
+      "role": "",
       "decisions": [
         "A sleek, dark palette with precise, tech-inspired UI elements for a sophisticated, cutting-edge feel."
       ],
       "cover": "images/ui/14-tyax/desktop-1.webp",
+      "title": "TYAX",
       "images": [
         {
           "image": "images/ui/14-tyax/desktop-1.webp",
@@ -356,23 +349,23 @@
           "image": "images/ui/14-tyax/mobile-1.webp",
           "kind": "mobile"
         }
-      ]
-    },
-    {
-      "title": "Vasan Eye Care Hospital",
+      ],
       "tags": [
         "Corporate",
-        "Health",
-        "Hospital"
+        "IT",
+        "Technology"
       ],
-      "overview": "As Sri Lanka’s first advanced, one-stop eye care hospital, Vasan needed a digital platform that instantly communicated precision, modern medical expertise, and patient trust.",
-      "role": "",
       "objective": "",
+      "overview": "As a leading enterprise IT distributor across Sri Lanka, Singapore, and the Maldives, TYAX needed a modern B2B platform that signals global scale, technical innovation, and reliability."
+    },
+    {
       "approach": "A pristine, intuitive interface in clean white and medical blue with subtle brand-orange highlights, so patients can easily book appointments and navigate treatments.",
+      "role": "",
       "decisions": [
         "A main banner where text transitions from heavily blurred to razor-sharp as you read “Step into a world of clarity,” and custom buttons with camera-focus corner markers."
       ],
       "cover": "images/ui/15-vasan/desktop-1.webp",
+      "title": "Vasan Eye Care Hospital",
       "images": [
         {
           "image": "images/ui/15-vasan/desktop-1.webp",
@@ -382,22 +375,23 @@
           "image": "images/ui/15-vasan/inner-1.webp",
           "kind": "inner"
         }
-      ]
-    },
-    {
-      "title": "EFL India",
+      ],
       "tags": [
         "Corporate",
-        "Logistics"
+        "Health",
+        "Hospital"
       ],
-      "overview": "As a leading global third-party logistics provider under Expo Lanka operating in 39 countries, EFL 3PL needed a high-caliber corporate website to showcase data-driven supply chain solutions.",
-      "role": "",
       "objective": "",
+      "overview": "As Sri Lanka’s first advanced, one-stop eye care hospital, Vasan needed a digital platform that instantly communicated precision, modern medical expertise, and patient trust."
+    },
+    {
       "approach": "A structured, clean, minimal corporate framework that conveys complex global logistics networks for enterprise clients.",
+      "role": "",
       "decisions": [
         "A sharp orange and black palette, with the one-slashed-edge rectangle from their logo used as a consistent motif."
       ],
       "cover": "images/ui/16-efl-india/desktop-1.webp",
+      "title": "EFL India",
       "images": [
         {
           "image": "images/ui/16-efl-india/desktop-1.webp",
@@ -407,7 +401,13 @@
           "image": "images/ui/16-efl-india/mobile-1.webp",
           "kind": "mobile"
         }
-      ]
+      ],
+      "tags": [
+        "Corporate",
+        "Logistics"
+      ],
+      "objective": "",
+      "overview": "As a leading global third-party logistics provider under Expo Lanka operating in 39 countries, EFL 3PL needed a high-caliber corporate website to showcase data-driven supply chain solutions."
     }
   ],
   "graphic_projects": [
