@@ -1,0 +1,129 @@
+# Dashboard settings for the portfolio site (Decap CMS + Netlify Identity / Git Gateway)
+backend:
+  name: git-gateway
+  branch: main
+
+site_url: https://thejanidharmasena.netlify.app
+display_url: https://thejanidharmasena.netlify.app
+
+# Where newly uploaded images are saved
+media_folder: images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: site
+    label: "My Portfolio"
+    format: json
+    editor:
+      preview: false
+    files:
+
+      # ---------------------------------------------------------------- 1
+      - name: settings
+        label: "Welcome text, Contact info & Social links"
+        file: content/settings.json
+        fields:
+          - label: "Welcome description (the “Hey There!” paragraph)"
+            name: welcome
+            widget: text
+          - label: "Contact info next to the form (up to 4 rows)"
+            name: contacts
+            widget: list
+            max: 4
+            summary: "{{fields.label}}: {{fields.value}}"
+            hint: "Add up to 4 rows. The spacing and text size adjust automatically, so the layout never changes."
+            fields:
+              - { label: "Label (e.g. Email, Phone, Address)", name: label, widget: string }
+              - { label: "What to show (e.g. you@gmail.com)", name: value, widget: string }
+              - { label: "Link (optional)", name: link, widget: string, required: false, hint: "Leave empty for emails and phone numbers, they become clickable automatically. For anything else paste a full link starting with https://" }
+          - label: "Social media links"
+            name: socials
+            widget: list
+            summary: "{{fields.name}}"
+            hint: "Add a new one, or use the ✕ button on an item to remove it. Drag the ⋮⋮ handle to reorder."
+            fields:
+              - { label: "Name (e.g. Behance)", name: name, widget: string }
+              - { label: "Short text shown next to it (e.g. behance.net/yourname)", name: handle, widget: string, required: false }
+              - { label: "Full link (https://...)", name: url, widget: string }
+          - label: "Email that receives messages from the contact form"
+            name: form_email
+            widget: string
+            hint: "If you change this, send one test message from the live site and click the 'Activate Form' email FormSubmit sends to the new address."
+
+      # ---------------------------------------------------------------- 2
+      - name: projects
+        label: "Projects"
+        file: content/projects.json
+        fields:
+          - label: "UI/UX Design projects (drag ⋮⋮ to change the order)"
+            name: ui_projects
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - label: "Tags (shown under the title)"
+                name: tags
+                widget: list
+                field: { label: Tag, name: tag, widget: string }
+              - { label: "Thumbnail (the image shown on the project card on the website)", name: cover, widget: image, hint: "Uploaded separately from the popup images. It only appears in the popup if you also add it under 'Final screens' below." }
+              - { label: "Project overview", name: overview, widget: text, required: false, hint: "Who the client is and what the project was." }
+              - { label: "My role", name: role, widget: text, required: false, hint: "What you were responsible for. Leave empty to hide this section in the popup." }
+              - { label: "Problem / design objective", name: objective, widget: text, required: false, hint: "The problem you were solving or the goal of the design. Leave empty to hide." }
+              - { label: "Design approach", name: approach, widget: text, required: false, hint: "How you went about it. Leave empty to hide." }
+              - label: "Key design decisions (add one item per decision, drag to reorder)"
+                name: decisions
+                widget: list
+                required: false
+                field: { label: Decision, name: decision, widget: text }
+              - label: "Final screens and responsive versions (drag to reorder)"
+                name: images
+                widget: list
+                summary: "{{fields.kind}}: {{fields.image}}"
+                fields:
+                  - { label: Image, name: image, widget: image }
+                  - label: "Type"
+                    name: kind
+                    widget: select
+                    default: inner
+                    options:
+                      - { label: "Desktop (wide, full width)", value: desktop }
+                      - { label: "Mobile (small, half width)", value: mobile }
+                      - { label: "Inner page (small, half width)", value: inner }
+          - label: "Graphic & Illustration projects (drag ⋮⋮ to change the order)"
+            name: graphic_projects
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - label: "Tags (shown under the title)"
+                name: tags
+                widget: list
+                field: { label: Tag, name: tag, widget: string }
+              - { label: "Thumbnail (the image shown on the project card on the website)", name: cover, widget: image, hint: "Uploaded separately from the popup images." }
+              - label: "Images inside the popup (drag to reorder)"
+                name: images
+                widget: list
+                summary: "{{fields.image}}"
+                fields:
+                  - { label: Image, name: image, widget: image }
+
+      # ---------------------------------------------------------------- 3
+      - name: experience
+        label: "Experience & Education"
+        file: content/experience.json
+        fields:
+          - label: "Experience (drag ⋮⋮ to change the order, newest first)"
+            name: jobs
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Dates (e.g. Nov 2023 — Present)", name: dates, widget: string }
+              - { label: "Job title", name: title, widget: string }
+              - { label: "Company and description", name: description, widget: text }
+          - label: "Education, certificates & tools (right-hand column)"
+            name: side_items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: "Text (press Enter for a new line)", name: text, widget: text }
