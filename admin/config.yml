@@ -66,6 +66,7 @@ collections:
                 widget: list
                 field: { label: Tag, name: tag, widget: string }
               - { label: "Thumbnail (the image shown on the project card on the website)", name: cover, widget: image, hint: "Uploaded separately from the popup images. It only appears in the popup if you also add it under 'Final screens' below." }
+              - { label: "Link to the live website (optional)", name: live_url, widget: string, required: false, pattern: ['^https?://.+', "Must start with https://"], hint: "If filled, a 'Visit live site' button appears in the popup. Leave empty if there is no live site." }
               - { label: "Project overview", name: overview, widget: text, required: false, hint: "Who the client is and what the project was." }
               - { label: "My role", name: role, widget: text, required: false, hint: "What you were responsible for. Leave empty to hide this section in the popup." }
               - { label: "Problem / design objective", name: objective, widget: text, required: false, hint: "The problem you were solving or the goal of the design. Leave empty to hide." }
