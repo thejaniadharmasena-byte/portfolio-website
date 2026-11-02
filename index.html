@@ -34,6 +34,13 @@ button{font:inherit;color:inherit;cursor:pointer}
 .nav a{position:relative;color:#ced4da;padding:6px 0;transition:color .3s}
 .nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--paper);transition:right .4s var(--ease)}
 .nav a:hover{color:#fff}.nav a:hover::after{right:0}
+.nav{align-items:center}
+.nav a.cv{padding:9px 18px;border:1px solid rgba(255,255,255,.4);border-radius:99px;color:#fff;white-space:nowrap;transition:background .3s,color .3s,border-color .3s}
+.nav a.cv::after{display:none}
+.nav a.cv:hover{background:#fff;color:var(--ink);border-color:#fff}
+.nav a.cv[hidden]{display:none}
+@media(max-width:360px){.nav a[href="#about"]{display:none}}
+.job .co{color:#ced4da;font-size:14px;letter-spacing:.02em;margin:-3px 0 10px}
 /* hero */
 .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px 20px 110px;overflow:hidden;background:radial-gradient(600px circle at var(--mx,50%) var(--my,45%),#2b3036 0%,transparent 70%),var(--ink)}
 .hero h1{font-weight:800;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(46px,13.2vw,210px);line-height:1;white-space:nowrap;cursor:default;user-select:none;will-change:transform,opacity}
@@ -199,14 +206,14 @@ button{font:inherit;color:inherit;cursor:pointer}
  .job{grid-template-columns:1fr;gap:6px}
  .hide-sm{display:none}
 }
-@media(max-width:520px){.gal{column-count:1}.tabs button{padding:10px 14px}.nav{gap:18px}.panel{border-radius:0}.modal{padding:0}.panel{max-height:100vh}}
+@media(max-width:520px){.gal{column-count:1}.tabs button{padding:10px 14px}.nav{gap:12px;font-size:10px;letter-spacing:.1em}.nav a.cv{padding:8px 12px}.panel{border-radius:0}.modal{padding:0}.panel{max-height:100vh}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}.ch>span{transform:none}}
 </style>
 </head>
 <body>
 <header class="hdr" id="hdr">
   <a href="#top" aria-label="Back to top"><img class="logo" src="logo.png" alt="Logo" width="44" height="44"></a>
-  <nav class="nav k"><a href="#work">Work</a><a href="#about">About</a><a class="hide-sm" href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+  <nav class="nav k"><a href="#work">Work</a><a href="#about">About</a><a class="hide-sm" href="#experience">Experience</a><a href="#contact">Contact</a><a class="cv" id="cvbtn" href="#" target="_blank" rel="noopener" hidden>Download CV</a></nav>
 </header>
 
 <section class="hero" id="top">
@@ -417,6 +424,8 @@ const autoLink=v=>{v=String(v||'').trim();if(/^(https?:|mailto:|tel:)/i.test(v))
 function applySettings(d){
   if(d.welcome&&d.welcome.trim()){setAbout(d.welcome);wordPass()}
   if(d.form_email&&d.form_email.trim())EMAIL=d.form_email.trim();
+  const cv=(d.cv||'').trim(),cvb=$('#cvbtn');
+  if(cv&&!/^\s*(javascript|data):/i.test(cv)){cvb.href=cv;cvb.hidden=false}else cvb.hidden=true;
   if(Array.isArray(d.contacts)){
     const rows=d.contacts.filter(c=>c&&(c.value||'').trim()).slice(0,4),box=$('#cinfo');
     box.dataset.n=rows.length;
@@ -427,7 +436,7 @@ function applySettings(d){
   }
 }
 function applyExp(d){
-  if(Array.isArray(d.jobs))$('#jobs').innerHTML=d.jobs.map(j=>`<div class="job rv in"><div class="k">${esc(j.dates||'')}</div><div><h3>${esc(j.title||'')}</h3><p>${escbr(j.description||'')}</p></div></div>`).join('');
+  if(Array.isArray(d.jobs))$('#jobs').innerHTML=d.jobs.map(j=>`<div class="job rv in"><div class="k">${esc(j.dates||'')}</div><div><h3>${esc(j.title||'')}</h3>${(j.company||'').trim()?`<div class="co">${esc(j.company.trim())}</div>`:''}<p>${escbr(j.description||'')}</p></div></div>`).join('');
   if(Array.isArray(d.side_items))$('#side').innerHTML=d.side_items.map(it=>`<div class="it rv in"><h3>${esc(it.title||'')}</h3><p>${escbr(it.text||'')}</p></div>`).join('');
 }
 function applyProjects(d){
