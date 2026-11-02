@@ -45,6 +45,13 @@ collections:
               - { label: "Name (e.g. Behance)", name: name, widget: string }
               - { label: "Short text shown next to it (e.g. behance.net/yourname)", name: handle, widget: string, required: false }
               - { label: "Full link (https://...)", name: url, widget: string }
+          - label: "CV (PDF) for the 'Download CV' button in the header"
+            name: cv
+            widget: file
+            required: false
+            media_folder: "/files"
+            public_folder: "/files"
+            hint: "Upload your CV as a PDF. The button appears in the header once a file is uploaded, and opens the CV in a new tab. Remove the file to hide the button."
           - label: "Email that receives messages from the contact form"
             name: form_email
             widget: string
@@ -120,7 +127,8 @@ collections:
             fields:
               - { label: "Dates (e.g. Nov 2023 — Present)", name: dates, widget: string }
               - { label: "Job title", name: title, widget: string }
-              - { label: "Company and description", name: description, widget: text }
+              - { label: "Company name", name: company, widget: string, required: false }
+              - { label: "Description", name: description, widget: text }
           - label: "Education, certificates & tools (right-hand column)"
             name: side_items
             widget: list
