@@ -3,17 +3,20 @@
     {
       "dates": "Nov 2023 — Present",
       "title": "Senior UI/UX Designer & Team Lead",
-      "description": "Web Lankan. Overseeing web projects from information gathering to final design delivery, with a focus on visual quality, strong typography and consistent design systems, and close review of implementations with QA and engineering."
+      "company": "Web Lankan",
+      "description": "Overseeing web projects from information gathering to final design delivery, with a focus on visual quality, strong typography and consistent design systems, and close review of implementations with QA and engineering."
     },
     {
       "dates": "Apr 2020 — Oct 2023",
       "title": "UI/UX Designer",
-      "description": "Antyra Solutions. Joined as an illustrator and moved into UI/UX, creating wireframes, interfaces and interactive prototypes that bridge marketing narratives and user experience."
+      "company": "Antyra Solutions",
+      "description": "Joined as an illustrator and moved into UI/UX, creating wireframes, interfaces and interactive prototypes that bridge marketing narratives and user experience."
     },
     {
       "dates": "Sep 2015 — Apr 2020",
       "title": "Senior Graphic Designer & Conceptual Illustrator",
-      "description": "Balmond Studio / Clan B. Built the foundation in graphic design, typography and branding systems with Sri Lankan and UK art directors across advertising, interiors and print."
+      "company": "Balmond Studio / Clan B",
+      "description": "Built the foundation in graphic design, typography and branding systems with Sri Lankan and UK art directors across advertising, interiors and print."
     }
   ],
   "side_items": [
