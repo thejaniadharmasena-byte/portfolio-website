@@ -424,7 +424,7 @@
         "Illustration",
         "Greeting Cards"
       ],
-      "cover": "images/gfx/01-illustrations-2020/cover.webp",
+      "cover": "/images/uploads/g-1.jpg",
       "images": [
         {
           "image": "images/gfx/01-illustrations-2020/hero.webp"
@@ -443,7 +443,7 @@
         "Illustration",
         "Fan Art"
       ],
-      "cover": "images/gfx/02-fan-art/cover.webp",
+      "cover": "/images/uploads/g-2.jpg",
       "images": [
         {
           "image": "images/gfx/02-fan-art/hero.webp"
@@ -459,7 +459,7 @@
         "Packaging",
         "Branding"
       ],
-      "cover": "images/gfx/03-organic-kids-food-branding/cover.webp",
+      "cover": "/images/uploads/g-3.jpg",
       "images": [
         {
           "image": "images/gfx/03-organic-kids-food-branding/photo.webp"
@@ -481,7 +481,7 @@
         "Illustration",
         "Travel Posters"
       ],
-      "cover": "images/gfx/04-travel-posters-illustration/cover.webp",
+      "cover": "/images/uploads/g-4.jpg",
       "images": [
         {
           "image": "images/gfx/04-travel-posters-illustration/hero.webp"
@@ -506,7 +506,7 @@
         "Illustration",
         "Children’s Book Art"
       ],
-      "cover": "images/gfx/05-childrens-book-illustrations/cover.webp",
+      "cover": "/images/uploads/g-5.jpg",
       "images": [
         {
           "image": "images/gfx/05-childrens-book-illustrations/hero.webp"
@@ -528,7 +528,7 @@
         "Typography",
         "30 Day Series"
       ],
-      "cover": "images/gfx/06-30-days-of-akuru/cover.webp",
+      "cover": "/images/uploads/g-6.jpg",
       "images": [
         {
           "image": "images/gfx/06-30-days-of-akuru/letter-01.webp"
@@ -589,7 +589,7 @@
         "Digital Illustrations",
         "Art"
       ],
-      "cover": "images/gfx/07-traditional-masks-i/cover.webp",
+      "cover": "/images/uploads/g-7.jpg",
       "images": [
         {
           "image": "images/gfx/07-traditional-masks-i/hero.webp"
@@ -620,7 +620,7 @@
         "Maps",
         "Illustrations"
       ],
-      "cover": "images/gfx/08-map-illustrations/cover.webp",
+      "cover": "/images/uploads/g-8.jpg",
       "images": [
         {
           "image": "images/gfx/08-map-illustrations/hero.webp"
@@ -645,7 +645,7 @@
         "Graphic Design",
         "Social Media"
       ],
-      "cover": "images/gfx/09-social-media-assets-i/cover.webp",
+      "cover": "/images/uploads/g-9.jpg",
       "images": [
         {
           "image": "images/gfx/09-social-media-assets-i/cctv.webp"
@@ -679,7 +679,7 @@
         "Graphic Design",
         "Social Media"
       ],
-      "cover": "images/gfx/10-social-media-assets-ii/cover.webp",
+      "cover": "/images/uploads/g-10.jpg",
       "images": [
         {
           "image": "images/gfx/10-social-media-assets-ii/post-1.webp"
