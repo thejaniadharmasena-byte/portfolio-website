@@ -10,12 +10,12 @@
       "title": "Canterbury Hotel & Golf Resort",
       "images": [
         {
-          "image": "images/ui/01-canterbury/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/golf_1.jpg"
         },
         {
-          "image": "images/ui/01-canterbury/mobile-1.webp",
-          "kind": "mobile"
+          "kind": "inner",
+          "image": "/images/uploads/golf_1-1.jpg"
         }
       ],
       "tags": [
@@ -24,7 +24,7 @@
         "Golf Course"
       ],
       "objective": "",
-      "overview": "Canterbury’s massive competitive edge as a new resort was bringing luxury golf close to Colombo, saving players long travel times. The goal was to build an elite web presence that highlighted this proximity and exclusivity.\n\nLink - www.canterburygolfresort.lk",
+      "overview": "Canterbury’s massive competitive edge as a new resort was bringing luxury golf close to Colombo, saving players long travel times. The goal was to build an elite web presence that highlighted this proximity and exclusivity.",
       "live_url": "https://www.canterburygolfresort.lk/"
     },
     {
@@ -37,12 +37,16 @@
       "title": "Amaloh Boutique Hotel",
       "images": [
         {
-          "image": "images/ui/02-amaloh/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/amaloh_1.jpg"
         },
         {
-          "image": "images/ui/02-amaloh/mobile-1.webp",
-          "kind": "mobile"
+          "kind": "inner",
+          "image": "/images/uploads/amaloh_2.jpg"
+        },
+        {
+          "kind": "inner",
+          "image": "/images/uploads/amaloh_3.jpg"
         }
       ],
       "tags": [
@@ -62,12 +66,12 @@
       "title": "Elevate Ella Hotel",
       "images": [
         {
-          "image": "images/ui/03-elevate-ella/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/ella-1.jpg"
         },
         {
-          "image": "images/ui/03-elevate-ella/inner-1.webp",
-          "kind": "inner"
+          "kind": "inner",
+          "image": "/images/uploads/ella-2.jpg"
         }
       ],
       "tags": [
@@ -75,7 +79,8 @@
         "Hotel"
       ],
       "objective": "",
-      "overview": "Designed by a renowned Sri Lankan architect, this unique hotel features massive black stone walls integrated directly into misty mountain landscapes. The digital presence needed to mirror this raw, earthy, yet luxurious architecture."
+      "overview": "Designed by a renowned Sri Lankan architect, this unique hotel features massive black stone walls integrated directly into misty mountain landscapes. The digital presence needed to mirror this raw, earthy, yet luxurious architecture.",
+      "live_url": "https://www.elevateella.com/"
     },
     {
       "approach": "Every skin shares the same structure, so each property gets its own soul without a new build.",
@@ -87,12 +92,12 @@
       "title": "Dickwella Resort & Spa and Ayugiri Ayurveda Wellness Resort",
       "images": [
         {
-          "image": "images/ui/04-dickwella-ayugiri/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/dickwella-1.jpg"
         },
         {
-          "image": "images/ui/04-dickwella-ayugiri/desktop-2.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/dickwella-2.jpg"
         }
       ],
       "tags": [
@@ -126,7 +131,8 @@
         "Eco Tourism"
       ],
       "objective": "",
-      "overview": "An eco-tourism division of Jetwing Hotels crafting immersive wildlife, wellness, and filming experiences. I collaborated closely with their team to build a user-friendly hub for conscious travelers and global film crews."
+      "overview": "An eco-tourism division of Jetwing Hotels crafting immersive wildlife, wellness, and filming experiences. I collaborated closely with their team to build a user-friendly hub for conscious travelers and global film crews.",
+      "live_url": "https://www.jetwingeco.com/"
     },
     {
       "approach": "A high-conversion pathway for wedding couples and event planners, paired with dedicated, theme-driven menu templates for their Sri Lankan and Japanese restaurants.",
@@ -213,12 +219,12 @@
       "title": "Koxa by Dr. Cherry",
       "images": [
         {
-          "image": "images/ui/09-koxa/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/koxha-1.jpg"
         },
         {
-          "image": "images/ui/09-koxa/mobile-1.webp",
-          "kind": "mobile"
+          "kind": "inner",
+          "image": "/images/uploads/koxha-2.jpg"
         }
       ],
       "tags": [
