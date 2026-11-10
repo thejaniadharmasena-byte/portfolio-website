@@ -117,12 +117,20 @@
       "title": "Jetwing Eco Holidays",
       "images": [
         {
-          "image": "images/ui/05-jetwing-eco/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/eco-1.jpg"
         },
         {
-          "image": "images/ui/05-jetwing-eco/inner-1.webp",
-          "kind": "inner"
+          "kind": "inner",
+          "image": "/images/uploads/eco-2.jpg"
+        },
+        {
+          "kind": "inner",
+          "image": "/images/uploads/eco-3.jpg"
+        },
+        {
+          "kind": "inner",
+          "image": "/images/uploads/eco-4.jpg"
         }
       ],
       "tags": [
