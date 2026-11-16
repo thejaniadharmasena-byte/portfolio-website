@@ -177,12 +177,16 @@
       "title": "Travel Design",
       "images": [
         {
-          "image": "images/ui/07-travel-design/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/travel-design-1.jpg"
         },
         {
-          "image": "images/ui/07-travel-design/inner-1.webp",
-          "kind": "inner"
+          "kind": "inner",
+          "image": "/images/uploads/travel-design-2.jpg"
+        },
+        {
+          "kind": "inner",
+          "image": "/images/uploads/travel-design-3.jpg"
         }
       ],
       "tags": [
@@ -190,7 +194,8 @@
         "Travel Planning"
       ],
       "objective": "",
-      "overview": "Operating under Connaissance De Ceylan, this brand designs bespoke Sri Lankan holidays for high-end independent travelers. The goal was a clean, minimalist platform reflecting over 34 years of luxury travel expertise."
+      "overview": "Operating under Connaissance De Ceylan, this brand designs bespoke Sri Lankan holidays for high-end independent travelers. The goal was a clean, minimalist platform reflecting over 34 years of luxury travel expertise.",
+      "live_url": "https://www.traveldesignbycdc.com/"
     },
     {
       "approach": "A highly elegant, spacious layout that stays true to their established color palette.",
@@ -202,12 +207,12 @@
       "title": "Karusan Travels",
       "images": [
         {
-          "image": "images/ui/08-karusan/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/karusan-1.jpg"
         },
         {
-          "image": "images/ui/08-karusan/mobile-1.webp",
-          "kind": "mobile"
+          "kind": "inner",
+          "image": "/images/uploads/karusan-2.jpg"
         }
       ],
       "tags": [
@@ -215,7 +220,8 @@
         "Travel Planning"
       ],
       "objective": "",
-      "overview": "Operating under Connaissance De Ceylan, this brand designs bespoke Sri Lankan holidays for high-end independent travelers, with a clean, minimalist platform reflecting over 34 years of expertise."
+      "overview": "Operating under Connaissance De Ceylan, this brand designs bespoke Sri Lankan holidays for high-end independent travelers, with a clean, minimalist platform reflecting over 34 years of expertise.",
+      "live_url": "https://www.karusantravels.com/"
     },
     {
       "approach": "A light, spacious e-commerce interface that avoids crowded retail grids, making online shopping feel like entering a high-end spa.",
@@ -253,16 +259,16 @@
       "title": "Hedley’s Tea",
       "images": [
         {
-          "image": "images/ui/10-headleys-tea/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/hedleys-1.jpg"
         },
         {
-          "image": "images/ui/10-headleys-tea/inner-1.webp",
-          "kind": "inner"
+          "kind": "inner",
+          "image": "/images/uploads/hedleys-2.jpg"
         },
         {
-          "image": "images/ui/10-headleys-tea/inner-2.webp",
-          "kind": "inner"
+          "kind": "inner",
+          "image": "/images/uploads/hedleys-3.jpg"
         }
       ],
       "tags": [
@@ -270,7 +276,8 @@
         "Tea"
       ],
       "objective": "",
-      "overview": "A global Ceylon tea brand needing a modern e-commerce platform to streamline international purchasing, while honoring their signature heritage branding."
+      "overview": "A global Ceylon tea brand needing a modern e-commerce platform to streamline international purchasing, while honoring their signature heritage branding.",
+      "live_url": "https://www.hedleystea.com/"
     },
     {
       "approach": "A clean, modern e-commerce structure showcasing their huge variety of blends, so discovery and checkout feel quick.",
@@ -282,12 +289,16 @@
       "title": "T-Sips",
       "images": [
         {
-          "image": "images/ui/11-t-sips/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/t-sips-1.jpg"
         },
         {
-          "image": "images/ui/11-t-sips/mobile-1.webp",
-          "kind": "mobile"
+          "kind": "inner",
+          "image": "/images/uploads/t-sips-2.jpg"
+        },
+        {
+          "kind": "inner",
+          "image": "/images/uploads/t-sips-3.jpg"
         }
       ],
       "tags": [
@@ -295,7 +306,8 @@
         "Tea"
       ],
       "objective": "",
-      "overview": "Backed by four decades of heritage under Expoteas Ceylon, T-Sips has a youthful, vibrant personality. They needed a platform balancing corporate trust with a lively storefront."
+      "overview": "Backed by four decades of heritage under Expoteas Ceylon, T-Sips has a youthful, vibrant personality. They needed a platform balancing corporate trust with a lively storefront.",
+      "live_url": "https://www.t-sips.com/"
     },
     {
       "approach": "A clean, minimalist layout with a vibrant but controlled palette that highlights their core yellow and purple.",
@@ -307,12 +319,20 @@
       "title": "Viz Kids",
       "images": [
         {
-          "image": "images/ui/12-viz-kids/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/viz-1.jpg"
         },
         {
-          "image": "images/ui/12-viz-kids/inner-1.webp",
-          "kind": "inner"
+          "kind": "inner",
+          "image": "/images/uploads/viz-2.jpg"
+        },
+        {
+          "kind": "inner",
+          "image": "/images/uploads/viz-3.jpg"
+        },
+        {
+          "kind": "inner",
+          "image": "/images/uploads/viz-4.jpg"
         }
       ],
       "tags": [
@@ -332,12 +352,16 @@
       "title": "Vijitha Yapa Bookshop",
       "images": [
         {
-          "image": "images/ui/13-vijitha-yapa/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/vijitha-yapa-1.jpg"
         },
         {
-          "image": "images/ui/13-vijitha-yapa/mobile-1.webp",
-          "kind": "mobile"
+          "kind": "inner",
+          "image": "/images/uploads/vijitha-yapa-2.jpg"
+        },
+        {
+          "kind": "inner",
+          "image": "/images/uploads/vijitha-yapa-3.jpg"
         }
       ],
       "tags": [
@@ -345,7 +369,8 @@
         "Bookshop"
       ],
       "objective": "",
-      "overview": "As Sri Lanka’s largest book retailer, Vijitha Yapa needed to replace an outdated website with a modern e-commerce platform that could handle a massive, diverse catalog."
+      "overview": "As Sri Lanka’s largest book retailer, Vijitha Yapa needed to replace an outdated website with a modern e-commerce platform that could handle a massive, diverse catalog.",
+      "live_url": "https://www.vijithayapa.com/"
     },
     {
       "approach": "A clean, highly organized interface for business clients that makes complex enterprise catalogs and managed services easy to navigate.",
@@ -357,12 +382,12 @@
       "title": "TYAX",
       "images": [
         {
-          "image": "images/ui/14-tyax/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/tyax-1.jpg"
         },
         {
-          "image": "images/ui/14-tyax/mobile-1.webp",
-          "kind": "mobile"
+          "kind": "inner",
+          "image": "/images/uploads/tyax-2.jpg"
         }
       ],
       "tags": [
@@ -371,7 +396,8 @@
         "Technology"
       ],
       "objective": "",
-      "overview": "As a leading enterprise IT distributor across Sri Lanka, Singapore, and the Maldives, TYAX needed a modern B2B platform that signals global scale, technical innovation, and reliability."
+      "overview": "As a leading enterprise IT distributor across Sri Lanka, Singapore, and the Maldives, TYAX needed a modern B2B platform that signals global scale, technical innovation, and reliability.",
+      "live_url": "https://www.tyaxinc.com/"
     },
     {
       "approach": "A pristine, intuitive interface in clean white and medical blue with subtle brand-orange highlights, so patients can easily book appointments and navigate treatments.",
@@ -383,12 +409,16 @@
       "title": "Vasan Eye Care Hospital",
       "images": [
         {
-          "image": "images/ui/15-vasan/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/vasan-1.jpg"
         },
         {
-          "image": "images/ui/15-vasan/inner-1.webp",
-          "kind": "inner"
+          "kind": "inner",
+          "image": "/images/uploads/vasan-2.jpg"
+        },
+        {
+          "kind": "inner",
+          "image": "/images/uploads/vasan-3.jpg"
         }
       ],
       "tags": [
@@ -397,7 +427,8 @@
         "Hospital"
       ],
       "objective": "",
-      "overview": "As Sri Lanka’s first advanced, one-stop eye care hospital, Vasan needed a digital platform that instantly communicated precision, modern medical expertise, and patient trust."
+      "overview": "As Sri Lanka’s first advanced, one-stop eye care hospital, Vasan needed a digital platform that instantly communicated precision, modern medical expertise, and patient trust.",
+      "live_url": "https://www.vasanhealthcare.lk/"
     },
     {
       "approach": "A structured, clean, minimal corporate framework that conveys complex global logistics networks for enterprise clients.",
@@ -409,12 +440,12 @@
       "title": "EFL India",
       "images": [
         {
-          "image": "images/ui/16-efl-india/desktop-1.webp",
-          "kind": "desktop"
+          "kind": "inner",
+          "image": "/images/uploads/efl-1.jpg"
         },
         {
-          "image": "images/ui/16-efl-india/mobile-1.webp",
-          "kind": "mobile"
+          "kind": "inner",
+          "image": "/images/uploads/efl-2.jpg"
         }
       ],
       "tags": [
