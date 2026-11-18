@@ -26,6 +26,7 @@ collections:
           - label: "Welcome description (the “Hey There!” paragraph)"
             name: welcome
             widget: text
+            hint: "Leave one blank line (press Enter twice) to start a new paragraph."
           - label: "Contact info next to the form (up to 4 rows)"
             name: contacts
             widget: list
@@ -114,6 +115,57 @@ collections:
                 summary: "{{fields.image}}"
                 fields:
                   - { label: Image, name: image, widget: image }
+
+          - label: "Vibe coding projects (drag ⋮⋮ to change the order)"
+            name: vibe_projects
+            widget: list
+            required: false
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - label: "Tags (shown under the title)"
+                name: tags
+                widget: list
+                field: { label: Tag, name: tag, widget: string }
+              - { label: "Card colour (the coloured box behind the video)", name: color, widget: color, default: "#4f46e5" }
+              - { label: "Thumbnail image (shown on the card until you hover, and as the video poster)", name: cover, widget: image }
+              - { label: "Hover preview video (a short MP4 clip, about 5-8 seconds, under 10 MB)", name: preview_video, widget: file, required: false, media_folder: "/videos", public_folder: "/videos", hint: "Plays inside the coloured box when someone hovers the card. Leave empty to show only the thumbnail." }
+              - { label: "Preview start (seconds, optional)", name: preview_start, widget: number, value_type: float, min: 0, required: false, hint: "Only needed if the clip is longer and you want to loop one part of it." }
+              - { label: "Preview end (seconds, optional)", name: preview_end, widget: number, value_type: float, min: 0, required: false }
+              - { label: "Link to the live website (optional)", name: live_url, widget: string, required: false, pattern: ['^https?://.+', "Must start with https://"] }
+              - { label: "Project overview", name: overview, widget: text, required: false }
+              - { label: "My role", name: role, widget: text, required: false }
+              - label: "Key decisions (add one item per decision, drag to reorder)"
+                name: decisions
+                widget: list
+                required: false
+                field: { label: Decision, name: decision, widget: text }
+              - label: "Walkthrough videos (maximum 2)"
+                name: videos
+                widget: list
+                required: false
+                max: 2
+                summary: "{{fields.label}}"
+                hint: "Upload an MP4, or paste a YouTube / Vimeo link instead (better for long videos). If both are filled, the link is used."
+                fields:
+                  - { label: "Label (e.g. Desktop walkthrough)", name: label, widget: string, required: false }
+                  - { label: "Video file (MP4)", name: file, widget: file, required: false, media_folder: "/videos", public_folder: "/videos" }
+                  - { label: "or YouTube / Vimeo link", name: url, widget: string, required: false }
+              - label: "Screens (drag to reorder)"
+                name: images
+                widget: list
+                required: false
+                summary: "{{fields.kind}}: {{fields.image}}"
+                fields:
+                  - { label: Image, name: image, widget: image }
+                  - label: "Type"
+                    name: kind
+                    widget: select
+                    default: inner
+                    options:
+                      - { label: "Desktop (wide, full width)", value: desktop }
+                      - { label: "Mobile (small, half width)", value: mobile }
+                      - { label: "Inner page (small, half width)", value: inner }
 
       # ---------------------------------------------------------------- 3
       - name: experience
