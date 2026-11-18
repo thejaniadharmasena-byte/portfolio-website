@@ -62,7 +62,8 @@ button{font:inherit;color:inherit;cursor:pointer}
 .about .k{color:var(--mute);padding-top:14px;display:flex;align-items:center;gap:12px}
 .wave{display:inline-block;transform-origin:70% 70%;animation:wave 2.6s ease-in-out infinite;font-size:20px}
 @keyframes wave{0%,60%,100%{transform:rotate(0)}10%,30%{transform:rotate(16deg)}20%,40%{transform:rotate(-8deg)}50%{transform:rotate(10deg)}}
-.about p{font-size:clamp(22px,3vw,40px);line-height:1.42;font-weight:300;letter-spacing:-.01em;max-width:1000px}
+.about p{font-size:clamp(18px,2.1vw,28px);line-height:1.55;font-weight:300;letter-spacing:-.005em;max-width:880px}
+.about p+p{margin-top:1.1em}
 .about p .w{opacity:.18;transition:opacity .6s}
 .about p .w.on{opacity:1}
 /* work */
@@ -76,6 +77,23 @@ button{font:inherit;color:inherit;cursor:pointer}
 .tabs sup{font-size:.78em;opacity:.55;margin-left:6px;vertical-align:baseline}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(40px,5vw,72px) clamp(20px,3vw,44px);transition:opacity .35s}
 .grid.out{opacity:0}
+/* sticky tab bar */
+.wh{position:sticky;top:62px;z-index:12;background:var(--paper);padding:14px 0;margin-top:-14px;box-shadow:0 0 0 100vmax var(--paper);clip-path:inset(0 -100vmax)}
+/* vibe coding cards */
+.vibe .thumb{aspect-ratio:16/10;background:var(--c,#4f46e5);display:grid;place-items:center}
+.vibe .thumb::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(255,255,255,.14),rgba(0,0,0,.18))}
+.vf{position:relative;z-index:1;width:78%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#111;box-shadow:0 24px 48px -16px rgba(0,0,0,.55)}
+.vibe .vf img{object-position:top center}
+.vf video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .4s}
+.vf.on video{opacity:1}
+/* popup videos */
+.vids{display:grid;grid-template-columns:repeat(2,minmax(0,520px));gap:20px;padding:0 clamp(28px,4.4vw,64px) clamp(28px,4vw,44px)}
+.vids.one{grid-template-columns:minmax(0,640px)}
+.vid{aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000;box-shadow:0 20px 40px -26px rgba(0,0,0,.5)}
+.vid video,.vid iframe{width:100%;height:100%;border:0;display:block}
+.vl{margin-top:10px;color:var(--mute);font-size:11px}
+@media(max-width:900px){.vids,.vids.one{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:700px){.tabs{max-width:100%;overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tabs button{white-space:nowrap}.work h2{font-size:22px}.wh{gap:12px}}
 .card{all:unset;box-sizing:border-box;display:block;cursor:pointer;text-align:left}
 .card:focus-visible .thumb{outline:2px solid var(--ink);outline-offset:4px}
 .thumb{position:relative;aspect-ratio:4/3;border-radius:18px;overflow:hidden;background:#e9ecef;box-shadow:0 1px 0 rgba(0,0,0,.04),0 24px 50px -28px rgba(26,29,32,.35);transition:box-shadow .6s var(--ease),transform .6s var(--ease)}
@@ -193,11 +211,11 @@ button{font:inherit;color:inherit;cursor:pointer}
 .nxt small{display:block;color:var(--mute);margin-bottom:4px}
 .nxt b{font-weight:500;font-size:clamp(18px,2.2vw,28px)}
 .nxt svg{width:26px;height:26px;flex:none}
-.lb{position:fixed;inset:0;z-index:70;background:rgba(10,11,12,.94);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;cursor:zoom-out}
+.lb{position:fixed;inset:0;z-index:70;background:rgba(10,11,12,.94);display:flex;align-items:flex-start;justify-content:center;overflow-y:auto;overscroll-behavior:contain;padding:72px 0 48px;outline:0;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;cursor:zoom-out}
 .lb.open{opacity:1;visibility:visible}
-.lb img{max-width:92vw;max-height:90vh;object-fit:contain;border-radius:6px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
-.lb button{position:absolute;top:50%;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#fff;display:grid;place-items:center;transform:translateY(-50%)}
-.lb .p{left:20px}.lb .n{right:20px}.lb svg{width:18px;height:18px}
+.lb img{flex:none;max-width:none;max-height:none;width:min(1280px,94vw);height:auto;border-radius:6px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.lb button{position:fixed;top:50%;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#fff;display:grid;place-items:center;transform:translateY(-50%)}
+.lb .p{left:20px}.lb .n{right:20px}.lb .cl{top:24px;right:20px;transform:none}.lb svg{width:18px;height:18px}
 @media(max-width:900px){
  .grid{grid-template-columns:1fr}
  .about .wrap,.cols{grid-template-columns:1fr}
@@ -225,7 +243,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 
 <section class="about" id="about"><div class="wrap">
   <div class="k rv"><span class="wave">👋</span>Hey There!</div>
-  <p id="abt">I am a UI/UX Designer who thinks like an Art Director. With a 10-year background spanning conceptual illustration, branding systems, and digital product design, I bridge the gap between emotional brand storytelling and clean user interfaces. I don’t just structure layouts; I build immersive visual worlds that elevate the brand and make sense to the user.</p>
+  <div id="abt"></div>
 </div></section>
 
 <section class="work" id="work"><div class="wrap">
@@ -235,6 +253,7 @@ button{font:inherit;color:inherit;cursor:pointer}
       <i></i>
       <button role="tab" aria-selected="true" data-k="ui">UI/UX Design<sup id="cu"></sup></button>
       <button role="tab" aria-selected="false" data-k="gfx">Graphic &amp; Illustration<sup id="cg"></sup></button>
+      <button role="tab" aria-selected="false" data-k="vibe" hidden>Vibe coding<sup id="cb"></sup></button>
     </div>
   </div>
   <div class="grid ui" id="grid"></div>
@@ -283,7 +302,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 </div></section>
 
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Project details"><div class="panel" id="panel"></div></div>
-<div class="lb" id="lb"><button class="p" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m15 5-7 7 7 7"/></svg></button><img alt=""><button class="n" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 5 7 7-7 7"/></svg></button></div>
+<div class="lb" id="lb" tabindex="-1"><button class="cl" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 5l14 14M19 5 5 19"/></svg></button><button class="p" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m15 5-7 7 7 7"/></svg></button><img alt=""><button class="n" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 5 7 7-7 7"/></svg></button></div>
 
 <script>if(location.hash&&/(invite|recovery|confirmation)_token=/.test(location.hash))location.replace('/admin/'+location.hash);</script>
 <script>
@@ -292,7 +311,7 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
 const escbr=s=>esc(s).replace(/\r?\n/g,'<br>');
-let DATA={ui:[],gfx:[]};
+let DATA={ui:[],gfx:[],vibe:[]};
 const pad=n=>String(n).padStart(2,'0');
 const arrow='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17 17 7M8 7h9v9"/></svg>';
 $('#yr').textContent='© '+new Date().getFullYear()+' Portfolio';
@@ -328,8 +347,9 @@ function onScroll(){
 }
 /* about: words light up on scroll */
 const abt=$('#abt');let words=[];
-function setAbout(t){abt.innerHTML=t.split(/\s+/).filter(Boolean).map(w=>`<span class="w">${esc(w)}</span>`).join(' ');words=$$('#abt .w')}
-setAbout(abt.textContent);
+const INTRO="I’m a Senior UI/UX Designer with a background in graphic design, illustration, and branding. With 10+ years of experience, I combine strong visual design skills with a user-focused approach to create intuitive digital experiences and distinctive brand identities.\n\nI also explore AI-assisted vibe coding to bring design concepts to life and develop front-end prototypes. From shaping the overall visual direction to refining the smallest interface details, I bring creativity, clarity, and purpose to every project.";
+function setAbout(t){abt.innerHTML=String(t).trim().split(/\r?\n\s*\r?\n/).map(par=>'<p>'+par.split(/\s+/).filter(Boolean).map(w=>`<span class="w">${esc(w)}</span>`).join(' ')+'</p>').join('');words=$$('#abt .w')}
+setAbout(INTRO);
 function wordPass(){
   if(reduce){words.forEach(w=>w.classList.add('on'));return}
   const r=abt.getBoundingClientRect(),p=Math.min(1,Math.max(0,(innerHeight*.85-r.top)/(r.height+innerHeight*.35)));
@@ -346,9 +366,14 @@ let cat='ui';
 const grid=$('#grid');
 function render(){
   grid.className='grid '+cat;
-  grid.innerHTML=DATA[cat].map((p,i)=>`<button class="card rv" style="--d:${(i%2)*.12}s" data-i="${i}" aria-label="Open ${esc(p.title)}">
-    <div class="thumb"><img src="${esc(p.cover)}" alt="${esc(p.title)}" loading="${i<2?'eager':'lazy'}" decoding="async"><span class="view k">View project ${arrow}</span></div>
-    <div class="meta"><div><h3>${esc(p.title)}</h3><p class="tg k">${p.tags.map(esc).join(' · ')}</p></div><span class="no">${pad(i+1)}</span></div></button>`).join('');
+  grid.innerHTML=DATA[cat].map((p,i)=>{
+    const eg=i<2?'eager':'lazy',im=`<img src="${esc(p.cover)}" alt="${esc(p.title)}" loading="${eg}" decoding="async">`;
+    const th=cat==='vibe'
+      ?`<div class="thumb" style="--c:${esc(p.color)}"><div class="vf">${im}${p.pv?`<video muted loop playsinline preload="none" data-src="${esc(p.pv)}" data-s="${p.ps}" data-e="${p.pe}"></video>`:''}</div><span class="view k">View project ${arrow}</span></div>`
+      :`<div class="thumb">${im}<span class="view k">View project ${arrow}</span></div>`;
+    return `<button class="card rv" style="--d:${(i%2)*.12}s" data-i="${i}" aria-label="Open ${esc(p.title)}">${th}
+    <div class="meta"><div><h3>${esc(p.title)}</h3><p class="tg k">${p.tags.map(esc).join(' · ')}</p></div><span class="no">${pad(i+1)}</span></div></button>`}).join('');
+  $$('#grid video').forEach(v=>{const s=+v.dataset.s||0,e=+v.dataset.e||0;v.addEventListener('timeupdate',()=>{if(e&&v.currentTime>=e)v.currentTime=s})});
   watch();
 }
 function tabs(){
@@ -363,27 +388,36 @@ $$('#tabs button').forEach(b=>b.onclick=()=>{
 addEventListener('resize',tabs);
 document.fonts&&document.fonts.ready.then(tabs);
 grid.addEventListener('click',e=>{const c=e.target.closest('.card');if(c)openP(cat,+c.dataset.i,c)});
+/* hover preview for vibe coding cards */
+const pvOn=c=>{const w=c.querySelector('.vf'),v=w&&w.querySelector('video');if(!v||reduce)return;if(!v.getAttribute('src'))v.src=v.dataset.src;const s=+v.dataset.s||0,go=()=>{try{v.currentTime=s}catch(_){}v.play().then(()=>w.classList.add('on')).catch(()=>{})};v.readyState>0?go():v.addEventListener('loadedmetadata',go,{once:true})};
+const pvOff=c=>{const w=c.querySelector('.vf'),v=w&&w.querySelector('video');if(!v)return;v.pause();w.classList.remove('on')};
+grid.addEventListener('pointerover',e=>{const c=e.target.closest('.card');if(c&&e.pointerType==='mouse'&&!c.contains(e.relatedTarget))pvOn(c)});
+grid.addEventListener('pointerout',e=>{const c=e.target.closest('.card');if(c&&!c.contains(e.relatedTarget))pvOff(c)});
+grid.addEventListener('focusin',e=>{const c=e.target.closest('.card');if(c)pvOn(c)});
+grid.addEventListener('focusout',e=>{const c=e.target.closest('.card');if(c)pvOff(c)});
 
 /* project popup */
 const modal=$('#modal'),panel=$('#panel');let last=null,cur=null;
 const fig=(im,cls='')=>`<figure class="${cls}" data-lb="${esc(im.src)}"><img src="${esc(im.src)}" alt="" ${im.w&&im.h?`width="${im.w}" height="${im.h}" `:''}loading="lazy" decoding="async"></figure>`;
+const emb=u=>{let m=u.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{11})/);if(m)return`<iframe src="https://www.youtube-nocookie.com/embed/${m[1]}" title="Walkthrough video" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>`;m=u.match(/vimeo\.com\/(?:video\/)?(\d+)/);if(m)return`<iframe src="https://player.vimeo.com/video/${m[1]}" title="Walkthrough video" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>`;return`<video src="${esc(u)}" controls playsinline preload="metadata"></video>`};
+const vids=p=>p.vids.length?`<div class="vids${p.vids.length===1?' one':''}">${p.vids.map(v=>`<div><div class="vid">${emb(v.src)}</div>${v.label?`<p class="vl k">${esc(v.label)}</p>`:''}</div>`).join('')}</div>`:'';
 function openP(c,i,el){
   const p=DATA[c][i],list=DATA[c],nx=list[(i+1)%list.length];cur={c,i};if(el)last=el;
   const head=`<button class="x" aria-label="Close">${'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 5l14 14M19 5 5 19"/></svg>'}</button>`;
   const dots=`<div class="dots k">${p.tags.map(esc).join('<i></i>')}</div>`;
   const next=`<button class="nxt" data-next="${(i+1)%list.length}"><div><small class="k">Next project</small><b>${esc(nx.title)}</b></div>${arrow}</button>`;
-  if(c==='ui'){
+  if(c==='ui'||c==='vibe'){
     const sec=(label,html)=>html?`<section class="cs-sec"><h4 class="k">${label}</h4><div class="cs-t">${html}</div></section>`:'';
     const dec=p.decisions.length?`<ol>${p.decisions.map(x=>`<li>${escbr(x)}</li>`).join('')}</ol>`:'';
     const para=t=>t&&t.trim()?`<p>${escbr(t.trim())}</p>`:'';
-    panel.innerHTML=head+`<div class="cs"><header class="cshead"><div class="cshead-l"><span class="no">${pad(i+1)} / ${pad(list.length)}</span>${dots}<h3>${esc(p.title)}</h3></div>${p.live?`<a class="cta" href="${esc(p.live)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Visit live site ${arrow}</a>`:''}</header><div class="csbody">${sec('Project overview',para(p.overview))}${sec('My role',para(p.role))}${sec('Problem / design objective',para(p.objective))}${sec('Design approach',para(p.approach))}${sec('Key design decisions',dec)}</div><div class="csshots"><h4 class="k">Final screens &amp; responsive versions</h4><div class="mimgs">${p.imgs.map(im=>fig(im,im.kind==='desktop'?'d':'')).join('')}</div></div></div>`+next;
+    panel.innerHTML=head+`<div class="cs"><header class="cshead"><div class="cshead-l"><span class="no">${pad(i+1)} / ${pad(list.length)}</span>${dots}<h3>${esc(p.title)}</h3></div>${p.live?`<a class="cta" href="${esc(p.live)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Visit live site ${arrow}</a>`:''}</header>${c==='vibe'?vids(p):''}<div class="csbody">${sec('Project overview',para(p.overview))}${sec('My role',para(p.role))}${sec('Problem / design objective',para(p.objective))}${sec('Design approach',para(p.approach))}${sec('Key design decisions',dec)}</div><div class="csshots"><h4 class="k">Final screens &amp; responsive versions</h4><div class="mimgs">${p.imgs.map(im=>fig(im,im.kind==='desktop'?'d':'')).join('')}</div></div></div>`+next;
   }else{
     panel.innerHTML=head+`<div class="mhead"><span class="no">${pad(i+1)} / ${pad(list.length)}</span>${dots}<h3>${esc(p.title)}</h3></div><div class="gal">${p.imgs.map(im=>fig(im)).join('')}</div>`+next;
   }
   panel.scrollTop=0;modal.classList.add('open');document.documentElement.style.overflow='hidden';
   panel.querySelector('.x').focus({preventScroll:true});
 }
-function closeP(){modal.classList.remove('open');document.documentElement.style.overflow='';last&&last.focus({preventScroll:true})}
+function closeP(){$$('#panel video').forEach(v=>v.pause());$$('#panel iframe').forEach(f=>{f.src='about:blank'});modal.classList.remove('open');document.documentElement.style.overflow='';last&&last.focus({preventScroll:true})}
 modal.addEventListener('click',e=>{
   if(e.target===modal||e.target.closest('.x'))return closeP();
   const n=e.target.closest('[data-next]');if(n)return openP(cur.c,+n.dataset.next);
@@ -391,11 +425,12 @@ modal.addEventListener('click',e=>{
 });
 /* lightbox */
 const lb=$('#lb'),lbi=lb.querySelector('img');let lbl=[],lbx=0;
-function openLB(f){lbl=$$('#panel [data-lb]').map(x=>x.dataset.lb);lbx=lbl.indexOf(f.dataset.lb);showLB();lb.classList.add('open')}
-function showLB(){lbi.src=lbl[(lbx+lbl.length)%lbl.length]}
+function openLB(f){lbl=$$('#panel [data-lb]').map(x=>x.dataset.lb);lbx=lbl.indexOf(f.dataset.lb);showLB();lb.classList.add('open');lb.focus({preventScroll:true})}
+function showLB(){lb.scrollTop=0;lbi.style.width='';lbi.onload=()=>{lbi.style.width=lbi.naturalHeight/lbi.naturalWidth>1.7?'min(760px,94vw)':''};lbi.src=lbl[(lbx+lbl.length)%lbl.length];if(lbi.complete&&lbi.naturalWidth)lbi.onload()}
 const step=d=>{lbx=(lbx+d+lbl.length)%lbl.length;showLB()};
 lb.querySelector('.p').onclick=e=>{e.stopPropagation();step(-1)};lb.querySelector('.n').onclick=e=>{e.stopPropagation();step(1)};
 lb.onclick=()=>lb.classList.remove('open');
+lb.querySelector('.cl').onclick=e=>{e.stopPropagation();lb.classList.remove('open')};
 addEventListener('keydown',e=>{
   if(lb.classList.contains('open')){if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1);return}
   if(modal.classList.contains('open')&&e.key==='Escape')closeP();
@@ -440,9 +475,9 @@ function applyExp(d){
   if(Array.isArray(d.side_items))$('#side').innerHTML=d.side_items.map(it=>`<div class="it rv in"><h3>${esc(it.title||'')}</h3><p>${escbr(it.text||'')}</p></div>`).join('');
 }
 function applyProjects(d){
-  const norm=(p,ui)=>({title:p.title||'Untitled',tags:(p.tags||[]).filter(Boolean),live:/^https?:\/\//i.test((p.live_url||'').trim())?p.live_url.trim():'',overview:p.overview||'',role:p.role||'',objective:p.objective||'',approach:p.approach||'',decisions:(p.decisions||[]).filter(Boolean),cover:p.cover||(p.images&&p.images[0]&&p.images[0].image)||'',imgs:(p.images||[]).filter(i=>i&&i.image).map(i=>({src:i.image,kind:i.kind||(ui?'inner':'')}))});
-  DATA={ui:(d.ui_projects||[]).map(p=>norm(p,true)),gfx:(d.graphic_projects||[]).map(p=>norm(p,false))};
-  $('#cu').textContent=DATA.ui.length;$('#cg').textContent=DATA.gfx.length;
+  const norm=(p,ui)=>({title:p.title||'Untitled',tags:(p.tags||[]).filter(Boolean),live:/^https?:\/\//i.test((p.live_url||'').trim())?p.live_url.trim():'',overview:p.overview||'',role:p.role||'',objective:p.objective||'',approach:p.approach||'',decisions:(p.decisions||[]).filter(Boolean),cover:p.cover||(p.images&&p.images[0]&&p.images[0].image)||'',imgs:(p.images||[]).filter(i=>i&&i.image).map(i=>({src:i.image,kind:i.kind||(ui?'inner':'')})),color:p.color||'#4f46e5',pv:(p.preview_video||'').trim(),ps:+p.preview_start||0,pe:+p.preview_end||0,vids:(p.videos||[]).filter(v=>v&&((v.url||'').trim()||(v.file||'').trim())).slice(0,2).map(v=>({label:v.label||'',src:(v.url||'').trim()||v.file.trim()}))});
+  DATA={ui:(d.ui_projects||[]).map(p=>norm(p,true)),gfx:(d.graphic_projects||[]).map(p=>norm(p,false)),vibe:(d.vibe_projects||[]).map(p=>norm(p,true))};
+  $('#cu').textContent=DATA.ui.length;$('#cg').textContent=DATA.gfx.length;$('#cb').textContent=DATA.vibe.length;$('[data-k="vibe"]').hidden=!DATA.vibe.length;
   render();tabs();
 }
 tabs();
